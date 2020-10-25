@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:elevation="@dimen/elevacion_actionbar"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:contentInsetStart="@dimen/margen_predeterminado"
+    app:contentInsetLeft="@dimen/margen_predeterminado"
+    app:logo="@drawable/icono_huella"
+    app:title="@string/app_name"
+    app:titleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+    app:titleMarginStart="50dp"
+    android:gravity="center"
+    >
+
+
+</androidx.appcompat.widget.Toolbar>

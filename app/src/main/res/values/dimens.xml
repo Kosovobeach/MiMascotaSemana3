@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margen_predeterminado">16dp</dimen>
+    <dimen name="calendario">200dp</dimen>
+    <dimen name="titulo">20sp</dimen>
+    <dimen name="radio_cardview">4dp</dimen>
+    <dimen name="primer_columna_tabla_contacto">120dp</dimen>
+    <dimen name="elevacion_actionbar">4dp</dimen>
+    <dimen name="iconoCV">30dp</dimen>
+</resources>
