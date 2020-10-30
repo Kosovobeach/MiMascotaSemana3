@@ -4,4 +4,17 @@
     <string name="tvLikesCV">5</string>
     <string name="icono_estrella">Link a ultimos 5 raiteados</string>
     <string name="icono_huella">MascotApp</string>
+    <string name="menu_contacto">Contacto</string>
+    <string name="menu_acerca_de">Acerca de</string>
+    <string name="icono_refresh">Actualizar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nombre_contacto">Nombre</string>
+    <string name="mail_contacto">Tu email</string>
+    <string name="mensaje_contacto">Escribe tu mensaje aqui</string>
+    <string name="boton_enviar">Enviar</string>
+    <string name="titulo_desarrollador">Desarrollador</string>
+    <string name="nombre_desarrollador">Ing. Fontana Lautaro</string>
+    <string name="descripcion_desarrollador">Lautaro es un chico nacido en Argentina, tiene la edad de 27 años, es Ingeniero Mecatrónico , y docente universitario de la FI-UNLZ. Actualmente se encuentra fortaleciendo sus habilidades en programación móvil</string>
+    <string name="nombre_mi_mascota">Dylan</string>
 </resources>

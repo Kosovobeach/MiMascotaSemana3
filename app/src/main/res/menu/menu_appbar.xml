@@ -6,13 +6,27 @@
     <item
         android:id="@+id/icono_estrella"
         android:icon="@drawable/icono_estrella"
-        app:showAsAction="ifRoom"
-        android:title="Ranking" />
+        android:orderInCategory="98"
+        android:title="@string/icono_estrella"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/icono_refresh"
+
+        android:icon="@drawable/icono_refresh"
+        android:orderInCategory="102"
+        android:title="@string/icono_refresh"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_contacto"
+        android:title="@string/menu_contacto"
+        android:orderInCategory="100"/>
+    <item
+        android:id="@+id/menu_acerca_de"
+        android:title="@string/menu_acerca_de"
+        android:orderInCategory="101"/>
 
 
-    <item>
-
-
-    </item>
 
 </menu>

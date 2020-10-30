@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.fontanalautaro.mimascotasemana3">
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -11,14 +13,39 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Ranking"
-            android:parentActivityName="com.fontanalautaro.mimascotasemana3.MainActivity"
+
+
+        <activity android:name=".BioDesarrollador"
+            android:parentActivityName=".MainActivity"
             tools:targetApi="jelly_bean">
+
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.fontanalautaro.mimascotasemana3.MainActivity" />
-        </activity>
+                android:value="com.fontanalautaro.mimascotasemana3.MainActivity" /></activity>
+
+
+        <activity
+            android:name=".FormularioContacto"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fontanalautaro.mimascotasemana3.MainActivity" /></activity>
+
+
+        <activity
+            android:name=".Ranking"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fontanalautaro.mimascotasemana3.MainActivity" /></activity>
+
 
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -27,6 +54,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package com.fontanalautaro.mimascotasemana3;
+package com.fontanalautaro.mimascotasemana3.pojo;
 
 public class Mascota {
 

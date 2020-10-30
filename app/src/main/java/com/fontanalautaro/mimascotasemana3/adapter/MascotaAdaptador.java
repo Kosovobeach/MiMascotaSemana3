@@ -1,13 +1,9 @@
-package com.fontanalautaro.mimascotasemana3;
+package com.fontanalautaro.mimascotasemana3.adapter;
 
 import android.app.Activity;
-import android.content.Intent;
-import android.media.Image;
-import android.provider.ContactsContract;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -15,7 +11,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.sql.Array;
+import com.fontanalautaro.mimascotasemana3.pojo.Mascota;
+import com.fontanalautaro.mimascotasemana3.R;
+
 import java.util.ArrayList;
 
 public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.MascotaViewHolder> {

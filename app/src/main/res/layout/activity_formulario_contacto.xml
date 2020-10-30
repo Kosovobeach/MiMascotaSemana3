@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormularioContacto">
+
+    <include
+        android:id="@+id/miActionBar"
+        layout="@layout/actionbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNombreContacto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margen_predeterminado"
+        android:layout_marginLeft="@dimen/margen_predeterminado"
+        android:layout_marginTop="@dimen/margen_predeterminado"
+        android:layout_marginEnd="@dimen/margen_predeterminado"
+        android:layout_marginRight="@dimen/margen_predeterminado"
+        android:ems="10"
+        android:hint="@string/nombre_contacto"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/miActionBar"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/etMailContacto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margen_predeterminado"
+        android:layout_marginLeft="@dimen/margen_predeterminado"
+        android:layout_marginTop="@dimen/margen_predeterminado"
+        android:layout_marginEnd="@dimen/margen_predeterminado"
+        android:layout_marginRight="@dimen/margen_predeterminado"
+        android:ems="10"
+        android:hint="@string/mail_contacto"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNombreContacto"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/etMensajeContacto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/margen_predeterminado"
+        android:layout_marginLeft="@dimen/margen_predeterminado"
+        android:layout_marginTop="@dimen/margen_predeterminado"
+        android:layout_marginEnd="@dimen/margen_predeterminado"
+        android:layout_marginRight="@dimen/margen_predeterminado"
+        android:layout_marginBottom="@dimen/margen_predeterminado"
+        android:background="@color/colorFondo"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/mensaje_contacto"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/btnEnviarContacto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMailContacto"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btnEnviarContacto"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margen_predeterminado"
+        android:layout_marginLeft="@dimen/margen_predeterminado"
+        android:layout_marginTop="@dimen/margen_predeterminado"
+        android:layout_marginEnd="@dimen/margen_predeterminado"
+        android:layout_marginRight="@dimen/margen_predeterminado"
+        android:layout_marginBottom="@dimen/margen_predeterminado"
+        android:text="@string/boton_enviar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMensajeContacto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
