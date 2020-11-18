@@ -3,14 +3,23 @@ package com.fontanalautaro.mimascotasemana3.pojo;
 public class Mascota {
 
     //Atributos
-    private int foto;
+
+
+    private int id;
     private String nombre="";
+    private int foto;
     private int likes=0;
+
+
 
     public Mascota(int foto, String nombre, int likes) {
         this.foto = foto;
         this.nombre = nombre;
         this.likes = likes;
+    }
+
+    public Mascota() {
+
     }
 
     public int getFoto() {
@@ -35,5 +44,13 @@ public class Mascota {
 
     public void setLikes(int likes) {
         this.likes = likes;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

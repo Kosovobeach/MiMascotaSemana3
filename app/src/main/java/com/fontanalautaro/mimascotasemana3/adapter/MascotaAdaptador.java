@@ -11,6 +11,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.fontanalautaro.mimascotasemana3.db.ConstructorMascotas;
 import com.fontanalautaro.mimascotasemana3.pojo.Mascota;
 import com.fontanalautaro.mimascotasemana3.R;
 
@@ -37,7 +38,7 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
 
     @Override
     //asocia cada elemento de nuestra vista con cada view
-    public void onBindViewHolder(@NonNull MascotaViewHolder mascotaViewHolder, int position) {
+    public void onBindViewHolder(@NonNull final MascotaViewHolder mascotaViewHolder, int position) {
         final Mascota mascota = mascotas.get(position);
         mascotaViewHolder.imgFoto.setImageResource(mascota.getFoto());
         mascotaViewHolder.tvLikesCV.setText(String.valueOf(mascota.getLikes()));
@@ -48,6 +49,11 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
             @Override
             public void onClick(View view) {
                 Toast.makeText(activity, "Diste like a " + mascota.getNombre(),Toast.LENGTH_SHORT).show();
+
+                ConstructorMascotas constructorMascotas = new ConstructorMascotas(activity);
+                constructorMascotas.darLikeMascota(mascota);
+
+                mascotaViewHolder.tvLikesCV.setText(constructorMascotas.obtenerLikesMascotas(mascota)+"");
 
             }
         });
